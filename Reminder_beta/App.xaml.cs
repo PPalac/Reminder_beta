@@ -167,7 +167,7 @@ namespace Reminder_beta
             if (taskRegistered == false)
             {
                 var check = BackgroundExecutionManager.RequestAccessAsync();
-                TimeTrigger trigger = new TimeTrigger(1440, true);
+                TimeTrigger trigger = new TimeTrigger(1440,false);
                 var taskBuldier = new BackgroundTaskBuilder();
                 taskBuldier.Name = TaskName;
                 taskBuldier.TaskEntryPoint = "Background.BTask";

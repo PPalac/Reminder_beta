@@ -40,7 +40,7 @@ namespace Reminder_beta
 
         private void NavigateToSettings_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(SetupPage));
+            //TODO: Settings
         }
         private async Task getData()
         {
